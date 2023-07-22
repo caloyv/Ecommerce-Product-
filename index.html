@@ -1,0 +1,156 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- mobile popout menu -->
+        <div class="cart hidden">
+          <p class="cart-title">Cart</p>
+          <hr />
+          <div class="cart-container">
+            <div class="cart-content-empty-container">
+              <p class="cart-content-empty ">Your cart is empty.</p>
+            </div>
+            <div class="cart-content-container hidden">
+              <div class="cart-content">
+                <img class="content-img-thumb" src="images/image-product-1-thumbnail.jpg" alt="" />
+                <div class="cart-item-details">
+                  <p class="cart-item">Fall Limited Edition Sneakers</p>
+                  <div class="cart-item-price-container">
+                    <p class="cart-item-price">&dollar;125.00 x&nbsp;
+                      <span class="cart-quantity"></span>
+                      
+                      <span class="cart-total-price"></span>
+                    </p>
+                  </div>
+                </div>
+                <img class="delete-btn" src="images/icon-delete.svg" alt="">
+              </div>
+              <button>Checkout</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img class="close-btn" src="images/icon-close.svg" alt="" />
+          <div class="menu-container">
+            <ul>
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- MOBILE -->
+        <div class="navbar ">
+          <img class="menu-btn" src="images/icon-menu.svg" id="mobile-menu" alt="Menu Button" />
+          <div class="logo-img"><img src="images/logo.svg" alt="" /></div>
+          <div id="desktop-menu">
+            <ul>
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="cart-container">
+            <img class="cart-btn" src="images/icon-cart.svg" alt="" />
+            <div class="cart-quantity-container hidden">0</div>
+          </div>
+          <img class="avatar-img" src="images/image-avatar.png" alt="" />
+        </div>
+        <!-- <hr> -->
+
+
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-img-container">
+        <div class="mobile-view ">
+          <img class="main-img" src="images/image-product-1.jpg" alt="Item image" />
+          <img class="prev-btn" src="images/icon-previous.svg" alt="Prev icon" />
+          <img class="next-btn" src="images/icon-next.svg" alt="Next icon" />
+        </div>
+
+        <div class="desktop-view">
+          <img class="main-img" id="desk-main-img" src="images/image-product-1.jpg" alt="Item Image" />
+          <div class="thumbnail-container">
+            <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail" class="thumbnail-1 thumbnail">
+            <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail" class="thumbnail-2 thumbnail">
+            <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail" class="thumbnail-3 thumbnail">
+            <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail" class="thumbnail-4 thumbnail">
+          </div>
+        </div>
+
+        
+      </section>
+
+      <section class="details-container">
+        <p class="company-name">SNEAKER COMPANY</p>
+        <p class="product-name">Fall Limited Edition Sneakers</p>
+        <p class="product-desc">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price-container">
+          <div class="cont2">
+            <p class="total-price"><span>&dollar;</span>125.00</p>
+            <div class="discount-container">
+              <div class="discount">50%</div>
+            </div>
+          </div>
+          <div class="original-price"><span>&dollar;</span>250.00</div>
+        </div>
+        <div class="cont3">
+          <div class="order-container">
+            <img class="minus-btn" src="images/icon-minus.svg" alt="Minus icon" />
+            <p class="quantity-order">0</p>
+            <img class="plus-btn" src="images/icon-plus.svg" alt="Plus icon" />
+          </div>
+          <button class="add-to-cart-btn">
+            <img src="images/icon-cart.svg" alt="Cart icon" />
+            Add to Card
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div class="desktop-modal hidden"> -->
+      <div class="modal-container hidden">
+        <img src="images/icon-close.svg" class="modal-close-btn" alt="Close icon">
+        <div class="modal-main-img">
+          <img src="images/image-product-1.jpg" id="modal-main-img" alt="Item image">
+          <img class="prev-btn" id="modal-prev-btn" src="images/icon-previous.svg" alt="Minus icon" />
+          <img class="next-btn" id="modal-next-btn" src="images/icon-next.svg" alt="Plus icon" />
+        </div>
+        <div class="thumbnail-container modal-thumbnail-container">
+          <div class=" thumb-border1"><img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail" class="thumbnail-1 thumbnail modal-thumbnail1"></div>
+          <div class="thumb-border2"><img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail" class="thumbnail-2 thumbnail modal-thumbnail2"></div>
+          <div class="thumb-border3"><img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail" class="thumbnail-3 thumbnail modal-thumbnail3"></div>
+          <div class="thumb-border4"><img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail" class="thumbnail-4 thumbnail modal-thumbnail4"></div>
+        </div>
+      </div>
+    <!-- </div> -->
+
+    <div class="grey hidden"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
